@@ -40,7 +40,8 @@ public class TimelineActivity extends AppCompatActivity {
     @BindView(R.id.swipeContainer) SwipeRefreshLayout swipeContainer;
     TweetAdapter tweetAdapter;  // Tweet Adapter
     ArrayList<Tweet> tweets;    // Array List with all of our Tweets in our feed
-    int lowest_id;         // id of last Tweet id seen on screen
+    // Store a member variable for the listener
+    private EndlessRecyclerViewScrollListener scrollListener;
 
     // Request code for composing activity
     private static final int COMPOSE_ACTIVITY_REQUEST_CODE = 20;
@@ -71,6 +72,20 @@ public class TimelineActivity extends AppCompatActivity {
         // RecyclerView setup (Layout Manager, use adapter)
         LinearLayoutManager ll = new LinearLayoutManager(this);
         rvTweets.setLayoutManager(ll);
+
+        // Retain an instance so that you can call `resetState()` for fresh searches
+        scrollListener = new EndlessRecyclerViewScrollListener(ll) {
+            @Override
+            public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
+                // Triggered only when new data needs to be appended to the list
+                // Add whatever code is needed to append new items to the bottom of the list
+                populateTimeline();
+            }
+        };
+
+        // Adds the scroll listener to RecyclerView
+        rvTweets.addOnScrollListener(scrollListener);
+
         // Setup refresh listener which triggers new data loading
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -131,7 +146,7 @@ public class TimelineActivity extends AppCompatActivity {
     private void populateTimeline(){
         long maxId = 0;
         if(tweets.size() > 0) {
-            maxId = tweets.get(tweets.size() - 1).uid;
+            maxId = tweets.get(tweets.size() - 1).uid - 1;
         }
         client.getInterestingnessList(maxId, new JsonHttpResponseHandler(){
             @Override
