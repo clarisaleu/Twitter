@@ -4,19 +4,21 @@ import android.os.Parcelable;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.parceler.Parcel;
 
 /**
  * @author      Clarisa Leu-Rodriguez <clarisaleu@gmail.com>
  * Description: Timeline for Twitter
  */
-@Parcel  // Annotation indicate class is Parcelable
+//@Parcel  // Annotation indicate class is Parcelable
 public class Tweet implements Parcelable {
     // Attributes:
     public String body;
     public  long uid;  // database ID for the tweet
     public String createdAt;
+    public int retweetCount;
+    public int favCount;
     public User user;
+    public String mediaUrl;
 
     // Default Constructor
     public Tweet() { }
@@ -25,7 +27,10 @@ public class Tweet implements Parcelable {
         body = in.readString();
         uid = in.readLong();
         createdAt = in.readString();
+        retweetCount = in.readInt();
+        favCount = in.readInt();
         user = in.readParcelable(User.class.getClassLoader());
+        mediaUrl = in.readString();
     }
 
     public static final Creator<Tweet> CREATOR = new Creator<Tweet>() {
@@ -47,7 +52,10 @@ public class Tweet implements Parcelable {
          tweet.body = obj.getString("text");
          tweet.uid = obj.getLong("id");
          tweet.createdAt = obj.getString("created_at");
+         tweet.retweetCount = obj.getInt("retweet_count");
+         tweet.favCount = obj.getInt("favorite_count");
          tweet.user = User.fromJSON(obj.getJSONObject("user"));
+         tweet.mediaUrl = obj.getJSONObject("entities").getJSONArray("media").getJSONObject(0).getString("media_url");
          return tweet;
     }
 
@@ -62,6 +70,9 @@ public class Tweet implements Parcelable {
         dest.writeString(body);
         dest.writeLong(uid);
         dest.writeString(createdAt);
+        dest.writeInt(retweetCount);
+        dest.writeInt(favCount);
         dest.writeParcelable(user, flags);
+        dest.writeString(mediaUrl);
     }
 }

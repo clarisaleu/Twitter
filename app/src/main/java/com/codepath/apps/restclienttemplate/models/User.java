@@ -6,7 +6,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.parceler.Parcel;
 
-@Parcel  // annotation indicate class is Parcelable
+//@Parcel  // annotation indicate class is Parcelable
 public class User implements Parcelable {
 
     // Attributes:

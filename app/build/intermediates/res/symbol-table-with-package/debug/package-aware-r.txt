@@ -675,15 +675,16 @@ drawable ic_action_name
 drawable ic_home_twitter
 drawable ic_launcher
 drawable ic_vector_close
+drawable ic_vector_comment
 drawable ic_vector_compose
 drawable ic_vector_compose_dm
 drawable ic_vector_follow
 drawable ic_vector_gif_pill
 drawable ic_vector_gif_pill_stroke
-drawable ic_vector_heart
 drawable ic_vector_heart_stroke
 drawable ic_vector_home
 drawable ic_vector_home_stroke
+drawable ic_vector_like_heart
 drawable ic_vector_location
 drawable ic_vector_location_stroke
 drawable ic_vector_messages
@@ -698,6 +699,7 @@ drawable ic_vector_retweet
 drawable ic_vector_retweet_stroke
 drawable ic_vector_search
 drawable ic_vector_search_stroke
+drawable ic_vector_share
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -777,6 +779,7 @@ id end
 id end_padder
 id expand_activities_button
 id expanded_menu
+id favCount
 id fill
 id fill_horizontal
 id fill_vertical
@@ -802,6 +805,7 @@ id listMode
 id list_item
 id media_actions
 id message
+id miActionProgress
 id miCompose
 id middle
 id multiply
@@ -815,10 +819,12 @@ id notification_main_column_container
 id packed
 id parent
 id parentPanel
+id pbProgressAction
 id percent
 id progress_circular
 id progress_horizontal
 id radio
+id retweetCount
 id right
 id right_icon
 id right_side
@@ -872,6 +878,9 @@ id title_template
 id top
 id topPanel
 id tvBody
+id tvLike
+id tvMedia
+id tvRetweet
 id tvTextCounter
 id tvTime
 id tvUserName
@@ -879,6 +888,7 @@ id tweetBackground
 id uniform
 id up
 id useLogo
+id view
 id withText
 id wrap
 id wrap_content
@@ -915,6 +925,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout action_view_progress
 layout activity_compose
 layout activity_login
 layout activity_timeline
@@ -987,6 +998,10 @@ string intent_scheme
 string login_label
 string search_menu_title
 string status_bar_notification_info_overflow
+string time
+string todo
+string tweet
+string username
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

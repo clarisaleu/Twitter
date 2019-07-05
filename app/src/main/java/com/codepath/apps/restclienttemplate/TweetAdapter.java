@@ -52,7 +52,10 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         holder.tvUsername.setText(tweet.user.name);
         holder.tvBody.setText(tweet.body);
         holder.tvTime.setText(getRelativeTimeAgo(tweet.createdAt));
+        holder.tvRetweet.setText(Integer.toString(tweet.retweetCount));
+        holder.tvFav.setText(Integer.toString(tweet.favCount));
         Glide.with(context).load(tweet.user.profileImageUrl).into(holder.ivProfileImage);
+        Glide.with(context).load(tweet.mediaUrl).into(holder.tvMedia);
     }
 
     /* Within the RecyclerView.Adapter class */
@@ -99,6 +102,9 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         public TextView tvUsername;       // Username
         public TextView tvBody;           // Body of Tweet
         public TextView tvTime;           // Timestamp of Tweet
+        public TextView tvRetweet;        // Retweet Count
+        public TextView tvFav;            // Fav Count
+        public ImageView tvMedia;         // Media Image
 
         public ViewHolder(View itemView){
             super(itemView);
@@ -106,6 +112,9 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             tvUsername = ButterKnife.findById(itemView, R.id.tvUserName);
             tvBody = ButterKnife.findById(itemView, R.id.tvBody);
             tvTime = ButterKnife.findById(itemView, R.id.tvTime);
+            tvRetweet = ButterKnife.findById(itemView, R.id.retweetCount);
+            tvFav = ButterKnife.findById(itemView, R.id.favCount);
+            tvMedia = ButterKnife.findById(itemView, R.id.tvMedia);
         }
     }
 }
