@@ -11,7 +11,6 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 
 import com.codepath.apps.restclienttemplate.activities.ComposeActivity;
 import com.codepath.apps.restclienttemplate.models.Tweet;
@@ -87,12 +86,10 @@ public class TimelineActivity extends AppCompatActivity {
         client = TwitterApplication.getRestClient(this);
         tweets = new ArrayList<>();
 
-
-
         // Action Bar
         styleActionBar();
 
-        tweetAdapter = new TweetAdapter(tweets);  // construct the adapter from this data source
+        tweetAdapter = new TweetAdapter(tweets, client);  // construct the adapter from this data source
         // RecyclerView setup (Layout Manager, use adapter)
         LinearLayoutManager ll = new LinearLayoutManager(this);
         rvTweets.setLayoutManager(ll);
@@ -130,7 +127,6 @@ public class TimelineActivity extends AppCompatActivity {
                 android.R.color.holo_red_light);
 
         rvTweets.setAdapter(tweetAdapter);
-     //   populateTimeline();
     }
 
     @Override

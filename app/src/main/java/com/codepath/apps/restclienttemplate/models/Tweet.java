@@ -19,6 +19,9 @@ public class Tweet implements Parcelable {
     public int favCount;
     public User user;
     public String mediaUrl;
+    public boolean isFavorited;  // already favorited
+    public boolean isRetweeted;  // already retweeted
+
 
     // Default Constructor
     public Tweet() { }
@@ -55,7 +58,13 @@ public class Tweet implements Parcelable {
          tweet.retweetCount = obj.getInt("retweet_count");
          tweet.favCount = obj.getInt("favorite_count");
          tweet.user = User.fromJSON(obj.getJSONObject("user"));
-         tweet.mediaUrl = obj.getJSONObject("entities").getJSONArray("media").getJSONObject(0).getString("media_url");
+         try {
+             tweet.mediaUrl = obj.getJSONObject("entities").getJSONArray("media").getJSONObject(0).getString("media_url");
+         } catch (JSONException e){
+             tweet.mediaUrl = null;
+        }
+         tweet.isFavorited = obj.getBoolean("favorited");
+         tweet.isRetweeted = obj.getBoolean("retweeted");
          return tweet;
     }
 

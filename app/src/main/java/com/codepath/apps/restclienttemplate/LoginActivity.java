@@ -1,8 +1,10 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
@@ -19,7 +21,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
-
+styleActionBar();
 		final SampleModel sampleModel = new SampleModel();
 		sampleModel.setName("CodePath");
 
@@ -33,6 +35,10 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 		});
 	}
 
+	public void styleActionBar(){
+		ActionBar actionBar = getSupportActionBar(); // or getActionBar();
+		actionBar.hide();
+	}
 
 	// Inflate the menu; this adds items to the action bar if it is present.
 	@Override

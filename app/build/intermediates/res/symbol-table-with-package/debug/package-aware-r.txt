@@ -754,6 +754,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id button
 id buttonPanel
 id cancel_action
 id center
@@ -779,6 +780,7 @@ id end
 id end_padder
 id expand_activities_button
 id expanded_menu
+id favBtn
 id favCount
 id fill
 id fill_horizontal
@@ -793,6 +795,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageView
 id info
 id invisible
 id italic
@@ -824,6 +827,7 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id retweetBtn
 id retweetCount
 id right
 id right_icon
@@ -878,9 +882,7 @@ id title_template
 id top
 id topPanel
 id tvBody
-id tvLike
 id tvMedia
-id tvRetweet
 id tvTextCounter
 id tvTime
 id tvUserName
