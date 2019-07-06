@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Jul 05 19:18:02 PDT 2019
+#Fri Jul 05 19:41:17 PDT 2019
 7.path=lib/armeabi-v7a/libgpuimage-library.so
 2.base=/Users/clarisaleu/AndroidStudioProjects/Twitter/app/build/intermediates/transforms/mergeJniLibs/debug/5
 5.set=NATIVE_RESOURCE

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
+ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-37:12
 MERGED from [jp.wasabeef:glide-transformations:2.0.2] /Users/clarisaleu/.gradle/caches/transforms-2/files-2.1/91ee99439df6c9e526e425bf7e6e0f99/AndroidManifest.xml:2:1-12:12
 MERGED from [jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1] /Users/clarisaleu/.gradle/caches/transforms-2/files-2.1/c9e73bb11652cb862c5d038a1b4a06e4/AndroidManifest.xml:2:1-12:12
 MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/clarisaleu/.gradle/caches/transforms-2/files-2.1/034e920d312f610e202799056f6156d2/AndroidManifest.xml:2:1-11:12
@@ -43,9 +43,9 @@ MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/clarisaleu
 MERGED from [com.android.support:print:28.0.0] /Users/clarisaleu/.gradle/caches/transforms-2/files-2.1/59ed57af648e41d02ef10f6d8ebbb1b2/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/clarisaleu/.gradle/caches/transforms-2/files-2.1/6274edc225aa8df449877553712cd43f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] /Users/clarisaleu/.gradle/caches/transforms-2/files-2.1/8c62b7a1d6ad8a35b599a8a4a381ff02/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
-INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:3:5-51
 		INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
@@ -69,7 +69,7 @@ ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidM
 	android:name
 		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:8:22-78
 application
-ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:10:5-39:19
+ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:10:5-36:19
 MERGED from [com.github.xbroak:CharCountTextView:v1.0] /Users/clarisaleu/.gradle/caches/transforms-2/files-2.1/eac1e81cc805617c7828ae5fe135130e/AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.xbroak:CharCountTextView:v1.0] /Users/clarisaleu/.gradle/caches/transforms-2/files-2.1/eac1e81cc805617c7828ae5fe135130e/AndroidManifest.xml:11:5-15:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/clarisaleu/.gradle/caches/transforms-2/files-2.1/2df78acda9b59abd7a36b56bd456ad01/AndroidManifest.xml:9:5-20
@@ -105,7 +105,7 @@ ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidM
 	android:name
 		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:18:19-51
 activity#com.codepath.apps.restclienttemplate.LoginActivity
-ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:19:9-38:20
+ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:19:9-35:20
 	android:label
 		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:21:13-45
 	android:theme
@@ -113,35 +113,35 @@ ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidM
 	android:name
 		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:20:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:23:13-27:29
+ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:23:13-26:29
 action#android.intent.action.MAIN
 ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:24:17-69
 	android:name
 		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:26:17-77
+ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:26:27-74
+		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:25:27-74
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/intent_host+data:scheme:@string/intent_scheme
-ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:28:13-37:29
+ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:27:13-34:29
 action#android.intent.action.VIEW
-ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:29:17-69
+ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:29:25-66
+		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:28:25-66
 category#android.intent.category.DEFAULT
-ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:31:17-76
+ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:29:17-76
 	android:name
-		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:31:27-73
+		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:29:27-73
 category#android.intent.category.BROWSABLE
-ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:32:17-78
+ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:30:17-78
 	android:name
-		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:32:27-75
+		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:30:27-75
 data
-ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:34:17-36:62
+ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:31:17-33:62
 	android:host
-		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:35:21-55
+		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:32:21-55
 	android:scheme
-		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:36:21-59
+		ADDED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml:33:21-59
 uses-sdk
 INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/clarisaleu/AndroidStudioProjects/Twitter/app/src/main/AndroidManifest.xml
